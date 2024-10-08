@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Vuelos en Tiempo Real</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Sistema de Vuelos en Tiempo Real</h1>
+    </header>
+
+    <div id="content">
+        <section id="mapa"></section>
+        <section id="chat-section">
+            <h2>Chat en tiempo real</h2>
+            <div id="chat-mensajes" class="chat-box"></div>
+            <form id="form-chat">
+                <input type="text" id="mensaje" placeholder="Escribe un mensaje..." autocomplete="off">
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </div>
+
+    <section id="vuelos-section">
+        <h2>Vuelos Activos</h2>
+        <div class="table-container">
+            <table id="tabla-vuelos">
+                <thead>
+                    <tr>
+                        <th>Vuelo</th>
+                        <th>Origen</th>
+                        <th>Destino</th>
+                        <th>ETA</th>
+                        <th>Capitán</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </section>
+
+    <script src="app2.js"></script>
+</body>
+</html>
